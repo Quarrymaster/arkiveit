@@ -1,0 +1,92 @@
+[
+  {
+    "post_id": "2042627342086869116",
+    "username": "elerianm",
+    "claim_text": "It is virtually guaranteed that April\u2019s data will be worse as the energy component continues to climb.",
+    "normalized": {
+      "category": "finance",
+      "asset": "US CPI",
+      "metric": "inflation data",
+      "direction": "above",
+      "threshold": null,
+      "deadline": null,
+      "conditions": "as the energy component continues to climb"
+    },
+    "tier": 1,
+    "verifiability_score": 1.0,
+    "implied_confidence": "high",
+    "timestamp": "2026-04-10 15:34:43+00:00"
+  },
+  {
+    "post_id": "1995469832628670776",
+    "username": "None",
+    "claim_text": "The strongest airdrop of the year is LIVE!",
+    "normalized": {
+      "category": "finance",
+      "asset": "$TROLL",
+      "metric": null,
+      "direction": null,
+      "threshold": null,
+      "deadline": "2023-12-31",
+      "conditions": "Implies this airdrop will be the strongest of the year, assuming no stronger ones occur later"
+    },
+    "tier": 2,
+    "verifiability_score": 0.3,
+    "implied_confidence": "high",
+    "timestamp": "2025-12-01 12:27:36+00:00"
+  },
+  {
+    "post_id": "1994011188175491265",
+    "username": "None",
+    "claim_text": "The BIGGEST #Crypto #PUMP #Signal is here! \ud83d\ude80 Join the action! $SOL",
+    "normalized": {
+      "category": "finance",
+      "asset": "SOL",
+      "metric": "price",
+      "direction": "above",
+      "threshold": null,
+      "deadline": null,
+      "conditions": "Implied pump signal for Solana cryptocurrency"
+    },
+    "tier": 2,
+    "verifiability_score": 0.3,
+    "implied_confidence": "high",
+    "timestamp": "2025-11-27 11:51:28+00:00"
+  },
+  {
+    "post_id": "2043093508945588730",
+    "username": "None",
+    "claim_text": "S&P is on the tipping point of a MAJOR DRAWDOWN. This MONTH.",
+    "normalized": {
+      "category": "finance",
+      "asset": "S&P",
+      "metric": "drawdown",
+      "direction": "below",
+      "threshold": null,
+      "deadline": null,
+      "conditions": "nothing nobody can do to stop it"
+    },
+    "tier": 2,
+    "verifiability_score": 0.4,
+    "implied_confidence": "high",
+    "timestamp": "2026-04-11 22:27:06+00:00"
+  },
+  {
+    "post_id": "2043088551353684185",
+    "username": "None",
+    "claim_text": "@Tesla\u2019s Optimus will begin to transform factory life, then home life, in 2028/2029.",
+    "normalized": {
+      "category": null,
+      "asset": "Tesla Optimus",
+      "metric": null,
+      "direction": null,
+      "threshold": null,
+      "deadline": "2029-12-31",
+      "conditions": null
+    },
+    "tier": 2,
+    "verifiability_score": 0.4,
+    "implied_confidence": "medium",
+    "timestamp": "2026-04-11 22:07:24+00:00"
+  }
+]
