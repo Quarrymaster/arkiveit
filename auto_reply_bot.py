@@ -180,17 +180,8 @@ def process_mention(mention) -> bool:
     # Get the original prediction tweet
     parent = get_parent_tweet(mention)
     if not parent:
-        log.info(f"Mention {mention.id} is not a reply to another tweet — skipping")
-        # Polite response for direct tags without context
-        try:
-            no_context_reply = (
-                "👋 To track a prediction, reply to the prediction tweet and tag @arkiveit. "
-                f"I'll archive it automatically. See all tracked predictions at {DASHBOARD_URL}"
-            )
-            post_reply(no_context_reply, str(mention.id))
-        except Exception:
-            pass
-        return False
+    log.info(f"Mention {mention.id} is not a reply to another tweet — skipping")
+    return False
 
     log.info(f"Parent tweet by @{parent['author_username']}: {parent['text'][:80]}")
 
