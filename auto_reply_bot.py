@@ -80,7 +80,8 @@ def load_state() -> dict:
         with open(STATE_FILE, "r") as f:
             return json.load(f)
     except (FileNotFoundError, ValueError):
-        return {"last_mention_id": None}
+        # Fall back to environment variable if no state file exists
+        return {"last_mention_id": os.getenv("LAST_MENTION_ID")}
 
 def save_state(state: dict):
     import json
