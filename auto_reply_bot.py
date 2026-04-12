@@ -180,9 +180,8 @@ def process_mention(mention) -> bool:
     # Get the original prediction tweet
     parent = get_parent_tweet(mention)
     if not parent:
-    log.info(f"Mention {mention.id} is not a reply to another tweet — skipping")
-    return False
-
+        log.info(f"Mention {mention.id} is not a reply to another tweet — skipping")
+        return False
     log.info(f"Parent tweet by @{parent['author_username']}: {parent['text'][:80]}")
 
     # Extract prediction from the parent tweet
