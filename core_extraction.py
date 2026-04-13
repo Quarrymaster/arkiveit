@@ -40,6 +40,7 @@ DO NOT extract:
 - Historical statements or explanations
 - Predictions with no way to verify true/false
 - Scheduled events or confirmed plans being reported as news (e.g. "meeting will be held tonight", "vote will take place tomorrow")
+- Statements reporting what "the consensus", "markets", "analysts" or "economists" expect or forecast — we only track the author's own forward-looking claims
 
 TIERS:
 - Tier 1: Highly verifiable — specific number, date, named outcome (e.g. "SPX hits 6000 by Dec 2025")
