@@ -30,7 +30,7 @@ STRICT DEFINITION — a prediction MUST have ALL of:
 1. A specific, falsifiable claim about a future state of the world
 2. A measurable outcome (price level, election winner, event happening/not happening)
 3. An implied or explicit timeframe
-4. Genuine uncertainty — the outcome must be genuinely unknown at the time of posting, not a scheduled or confirmed event being reported
+4. Genuine uncertainty — the outcome must be genuinely unknown and contested at the time of posting. Ask: "Could a reasonable informed person already know this outcome?" If yes, reject it. This includes: legislation already in committee, negotiations already announced, events already scheduled, consensus forecasts being repeated, and news being restated as predictions.
 
 DO NOT extract:
 - General opinions ("I think markets are overvalued")
@@ -41,6 +41,9 @@ DO NOT extract:
 - Predictions with no way to verify true/false
 - Scheduled events or confirmed plans being reported as news (e.g. "meeting will be held tonight", "vote will take place tomorrow")
 - Statements reporting what "the consensus", "markets", "analysts" or "economists" expect or forecast — we only track the author's own forward-looking claims
+- Reporting or repeating information that is already publicly known, scheduled, or in progress (e.g. legislation already in committee, negotiations already announced, events already scheduled)
+- Statements about what "will happen" that are based on already-confirmed information rather than genuine uncertainty
+- Restating or summarising news events as if they are predictions
 
 TIERS:
 - Tier 1: Highly verifiable — specific number, date, named outcome (e.g. "SPX hits 6000 by Dec 2025")
