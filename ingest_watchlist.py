@@ -46,7 +46,7 @@ def save_state(state: dict):
         json.dump(state, f, indent=2)
 
 
-def resolve_user_id(username: str) -> str | None:
+def resolve_user_id(username: str):
     """Fetch and cache the numeric user ID for a username."""
     try:
         resp = X_CLIENT.get_user(username=username, user_fields=["id"])
@@ -64,6 +64,8 @@ def ingest_watchlist():
     total_checked = 0
 
     for username in WATCHLIST:
+        if username.lower() == 'arkiveit':
+            continue
         print(f"\n📡 Checking @{username}...")
 
         # Resolve user ID (cached in state to save API calls)
