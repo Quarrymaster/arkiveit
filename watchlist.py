@@ -18,7 +18,6 @@ WATCHLIST = [
     "ianbremmer",      # Ian Bremmer — geopolitical risk
     "benshapiro",      # Ben Shapiro — political commentary
     "tuckercarlson",   # Tucker Carlson — political commentary
-    "AOC",             # Alexandria Ocasio-Cortez — political
 
     # Geopolitics
     "PeterZeihan",     # Peter Zeihan — geopolitics / demographics
