@@ -178,6 +178,12 @@ def process_mention(mention) -> bool:
         log.info("Skipping — mention is from the bot itself")
         return False
 
+    # Don't process if the mention text only contains @arkiveit (bot's own reply being picked up)
+    mention_text_clean = mention.text.replace("@arkiveit", "").strip()
+    if not mention_text_clean:
+        log.info("Skipping — empty mention after removing @arkiveit")
+        return False
+
     # Get the original prediction tweet
     parent = get_parent_tweet(mention)
     if not parent:
