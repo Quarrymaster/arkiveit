@@ -190,6 +190,10 @@ def process_mention(mention) -> bool:
         log.info(f"Mention {mention.id} is not a reply to another tweet — skipping")
         return False
     log.info(f"Parent tweet by @{parent['author_username']}: {parent['text'][:80]}")
+    # Don't archive if the parent tweet is from the bot itself
+    if parent['author_username'].lower() == 'arkiveit':
+        log.info("Skipping — parent tweet is from @arkiveit")
+        return False
 
     # Extract prediction from the parent tweet
     result = extract_prediction(parent["text"], f"Mentioned by user: {mention.text}")
