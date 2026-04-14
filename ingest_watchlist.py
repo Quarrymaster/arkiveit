@@ -121,6 +121,9 @@ def ingest_watchlist():
                         "source": "watchlist",
                         "status": "pending",
                     }
+                    if prediction_data['username'].lower() == 'arkiveit':
+                        print(f"   ⏭️  Skipping @arkiveit tweet")
+                        continue
                     saved = save_prediction(prediction_data)
                     if saved:
                         total_saved += 1
